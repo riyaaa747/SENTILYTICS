@@ -31,34 +31,90 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for styling
+
+
+###
 st.markdown("""
-    <style>
-        body {
-          
-            background-color: #1e293b;
-        }
-        .stApp {
-            background: linear-gradient(to right, #1e293b, #334155);
-            color: white;
-        }
-        .stTextInput > div > div > input {
-            background-color: #334155;
-            color: white;
-        }
-        .stButton>button {
-            background-color: #6366f1;
-            color: white;
-            font-weight: bold;
-            border-radius: 0.5rem;
-            transition: 0.3s ease-in-out;
-        }
-        .stButton>button:hover {
-            background-color: #4f46e5;
-            transform: scale(1.03);
-        }
-    </style>
+<style>
+
+.stApp{
+    #background: linear-gradient(135deg,#FFF8FB,#F5FFF8);
+    background: #e8f5e9;
+}
+
+/* Title */
+h2,h3{
+    text-align:center;
+    # color:#444;
+    color: black;
+}
+
+/* Textbox */
+.stTextInput input{
+    background:#ffffff;
+    border-radius:14px;
+    border:2px solid #D8F3DC;
+    padding:12px;
+    color:#444;
+}
+
+/* Button */
+.stButton button{
+    width:100%;
+    background:#A8E6CF;
+    color:#2F4F4F;
+    border:none;
+    border-radius:15px;
+    padding:12px;
+    font-weight:bold;
+    font-size:17px;
+}
+
+.stButton button:hover{
+    background:#88D8B0;
+}
+
+/* Success box */
+.stSuccess{
+    border-radius:15px;
+}
+
+/* Footer */
+footer{
+    visibility:hidden;
+}
+
+</style>
 """, unsafe_allow_html=True)
+
+# # Custom CSS for styling
+# st.markdown("""
+#     <style>
+#         body {
+          
+#             background-color: #1e293b;
+#         }
+#         .stApp {
+#             background: linear-gradient(to right, #1e293b, #334155);
+#             color: white;
+#         }
+#         .stTextInput > div > div > input {
+#             background-color: #334155;
+#             color: white;
+#         }
+#         .stButton>button {
+#             background-color: #6366f1;
+#             color: white;
+#             font-weight: bold;
+#             border-radius: 0.5rem;
+#             transition: 0.3s ease-in-out;
+#         }
+#         .stButton>button:hover {
+#             background-color: #4f46e5;
+#             transform: scale(1.03);
+#         }
+#     </style>
+# """, unsafe_allow_html=True)
 
 # Title and description
 st.markdown("## 🧠 Sentiment Analyzer")
