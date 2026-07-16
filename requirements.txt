@@ -1,0 +1,10 @@
+streamlit
+torch
+transformers
+tokenizers
+numpy
+pandas
+matplotlib
+scikit-learn
+nltk
+tqdm
